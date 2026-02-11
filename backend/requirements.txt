@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pymongo
+nltk
+vaderSentiment
+pandas
+reportlab
+python-multipart
