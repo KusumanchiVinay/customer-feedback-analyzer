@@ -4,7 +4,15 @@ from fastapi.middleware.cors import CORSMiddleware
 from sentiment import analyze_sentiment
 from keyword_extractor import extract_keywords
 from report import generate_csv
+from models import FeedbackModel
 from datetime import datetime
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+MONGO_URL = os.getenv("MONGO_URL")
+client = MongoClient(MONGO_URL)
 
 app = FastAPI()
 
@@ -16,8 +24,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-client = MongoClient("mongodb://localhost:27017/")
-db = client["feedbackDB"]
+# client = MongoClient("mongodb://localhost:27017/") # Removed hardcoded client
+db = client["customer_feedback"]
 collection = db["feedbacks"]
 
 @app.post("/submit")
@@ -42,8 +50,12 @@ def get_analytics():
     feedbacks = list(collection.find({}, {"_id": 0}))
     
     total = len(feedbacks)
-    avg_rating = sum(f["rating"] for f in feedbacks)/total if total else 0
-    
+    if total > 0:
+        avg_val = sum(f["rating"] for f in feedbacks) / total
+        avg_rating = round(avg_val, 2)
+    else:
+        avg_rating = 0.0
+
     sentiments = {"Positive":0, "Neutral":0, "Negative":0}
     texts = []
 
@@ -55,7 +67,7 @@ def get_analytics():
 
     return {
         "total_feedback": total,
-        "average_rating": round(avg_rating,2),
+        "average_rating": avg_rating,
         "sentiments": sentiments,
         "keywords": keywords,
         "data": feedbacks
@@ -66,3 +78,24 @@ def export_report():
     feedbacks = list(collection.find({}, {"_id": 0}))
     path = generate_csv(feedbacks)
     return {"file": path}
+
+@app.post("/submit")
+def submit_feedback(data: FeedbackModel):
+    try:
+        sentiment, score = analyze_sentiment(data["feedback"])
+
+        feedback = {
+            "name": data.get("name", "Anonymous"),
+            "product": data["product"],
+            "rating": int(data["rating"]),
+            "feedback": data["feedback"],
+            "sentiment": sentiment,
+            "score": score,
+            "date": datetime.now()
+        }
+
+        collection.insert_one(feedback)
+        return {"message": "Feedback submitted successfully"}
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))

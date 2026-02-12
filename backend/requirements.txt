@@ -6,3 +6,4 @@ vaderSentiment
 pandas
 reportlab
 python-multipart
+python-dotenv

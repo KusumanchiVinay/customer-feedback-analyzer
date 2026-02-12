@@ -1,0 +1,52 @@
+name,product,rating,feedback,sentiment,score,date
+Charlie,Analyzer Pro,2,It's buggy on mobile.,Neutral,0.0,2026-01-19 12:55:40.735
+Frank,Analyzer Pro,5,Highly recommended!,Positive,0.3367,2026-01-23 12:55:40.735
+David,Customer Voice,3,Missing some key integrations.,Negative,-0.296,2026-02-05 12:55:40.735
+David,Feedback Tool,3,"Not bad, but could be faster.",Positive,0.2323,2026-02-10 12:55:40.735
+Charlie,Feedback Tool,5,"Great tool, very intuitive!",Positive,0.6588,2026-02-08 12:55:40.735
+Ivy,Customer Voice,1,"Terrible experience, crashed twice.",Negative,-0.4767,2026-01-23 12:55:40.735
+Grace,Customer Voice,2,I encountered a login issue.,Neutral,0.0,2026-02-03 12:55:40.735
+Charlie,Analyzer Pro,5,Love the new features!,Positive,0.6696,2026-01-31 12:55:40.735
+Eve,Data Insights,5,Best analytics platform I've used.,Positive,0.6369,2026-01-28 12:55:40.735
+Charlie,Data Insights,3,Okay for the price.,Positive,0.2263,2026-02-10 12:55:40.735
+David,Feedback Tool,3,"Decent, but competitors are better.",Positive,0.5927,2026-01-15 12:55:40.735
+Grace,Data Insights,5,Excellent value for money.,Positive,0.7269,2026-01-16 12:55:40.735
+Frank,Data Insights,2,Slow loading times.,Neutral,0.0,2026-01-23 12:55:40.735
+Bob,Analyzer Pro,5,Best analytics platform I've used.,Positive,0.6369,2026-02-01 12:55:40.735
+Eve,Analyzer Pro,5,Life saver for our team.,Neutral,0.0,2026-02-01 12:55:40.735
+Jack,Feedback Tool,5,Life saver for our team.,Neutral,0.0,2026-01-22 12:55:40.735
+Ivy,Analyzer Pro,4,Simple and effective.,Positive,0.4767,2026-02-11 12:55:40.735
+Hannah,Analyzer Pro,5,Highly recommended!,Positive,0.3367,2026-02-02 12:55:40.735
+David,Data Insights,2,Documentation is sparse.,Neutral,0.0,2026-01-22 12:55:40.735
+Eve,Customer Voice,2,Slow loading times.,Neutral,0.0,2026-01-24 12:55:40.735
+Ivy,Feedback Tool,4,Simple and effective.,Positive,0.4767,2026-02-03 12:55:40.735
+Grace,Customer Voice,3,"Good, but expensive.",Positive,0.2382,2026-02-12 12:55:40.735
+Jack,Customer Voice,5,"Great tool, very intuitive!",Positive,0.6588,2026-02-11 12:55:40.735
+Bob,Feedback Tool,5,"Great tool, very intuitive!",Positive,0.6588,2026-01-31 12:55:40.735
+Grace,Feedback Tool,5,Love the new features!,Positive,0.6696,2026-02-02 12:55:40.735
+Grace,Customer Voice,2,It's buggy on mobile.,Neutral,0.0,2026-01-26 12:55:40.735
+Bob,Data Insights,2,I encountered a login issue.,Neutral,0.0,2026-01-24 12:55:40.735
+Alice,Analyzer Pro,5,Fantastic dashboard visualization.,Positive,0.5574,2026-01-19 12:55:40.735
+Hannah,Analyzer Pro,3,"Decent, but competitors are better.",Positive,0.5927,2026-01-20 12:55:40.735
+Hannah,Feedback Tool,3,Okay for the price.,Positive,0.2263,2026-01-29 12:55:40.735
+David,Data Insights,2,It's buggy on mobile.,Neutral,0.0,2026-01-20 12:55:40.735
+Eve,Feedback Tool,5,Highly recommended!,Positive,0.3367,2026-01-14 12:55:40.735
+Alice,Data Insights,1,"Terrible experience, crashed twice.",Negative,-0.4767,2026-02-04 12:55:40.735
+Hannah,Feedback Tool,4,Customer support was helpful.,Positive,0.6705,2026-01-24 12:55:40.735
+Bob,Feedback Tool,5,Best analytics platform I've used.,Positive,0.6369,2026-02-09 12:55:40.735
+Bob,Customer Voice,2,Documentation is sparse.,Neutral,0.0,2026-02-12 12:55:40.735
+Frank,Customer Voice,3,"Good, but expensive.",Positive,0.2382,2026-01-28 12:55:40.735
+Bob,Customer Voice,2,"Confusing UI, needs work.",Negative,-0.2263,2026-01-27 12:55:40.735
+Bob,Analyzer Pro,1,"Terrible experience, crashed twice.",Negative,-0.4767,2026-01-21 12:55:40.735
+Grace,Data Insights,5,Best analytics platform I've used.,Positive,0.6369,2026-01-28 12:55:40.735
+Alice,Analyzer Pro,2,I encountered a login issue.,Neutral,0.0,2026-01-26 12:55:40.735
+Hannah,Feedback Tool,5,Highly recommended!,Positive,0.3367,2026-02-12 12:55:40.735
+Frank,Analyzer Pro,3,"Good, but expensive.",Positive,0.2382,2026-01-24 12:55:40.735
+David,Customer Voice,4,Simple and effective.,Positive,0.4767,2026-01-16 12:55:40.735
+Hannah,Analyzer Pro,4,Customer support was helpful.,Positive,0.6705,2026-01-24 12:55:40.735
+Ivy,Customer Voice,3,Missing some key integrations.,Negative,-0.296,2026-02-02 12:55:40.735
+Hannah,Analyzer Pro,5,Highly recommended!,Positive,0.3367,2026-01-27 12:55:40.735
+Hannah,Customer Voice,5,Highly recommended!,Positive,0.3367,2026-01-23 12:55:40.735
+Alice,Feedback Tool,5,Excellent value for money.,Positive,0.7269,2026-01-22 12:55:40.735
+Ivy,Data Insights,2,Slow loading times.,Neutral,0.0,2026-01-15 12:55:40.735
+,Analyzer Pro,3,"yeah, it's working well. but need to improve",Positive,0.7184,2026-02-12 13:10:30.835
