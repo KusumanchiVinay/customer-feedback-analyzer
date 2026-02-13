@@ -81,7 +81,7 @@ React Frontend → REST API (Backend) → Database
 ---
 
 ## 📁 Project Structure
-
+```
 customer-feedback-analyzer/
 ├── backend/
 │ ├── main.py
@@ -94,6 +94,7 @@ customer-feedback-analyzer/
 │
 ├── .gitignore
 ├── README.md
+```
 
 ---
 
